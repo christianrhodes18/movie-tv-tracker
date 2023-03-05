@@ -144,30 +144,42 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-| **Week 1** | **Goal** |
-|:-----------|:---------|
-| Week 1 | 
-- Create project + README and add to GitHub
-- Begin work on Movie page (static content)
-  - Movie info page - full vh + vw
-| 
+- [ ] Week 1
+    - [ ] Create project + README and add to GitHub
+    - [ ] Begin work on Movie page (static content)
+    - [ ] Movie info page - full vh + vw
+- [ ] Week 2
+    - [ ] Begin floating NAV
+    - [ ] Icon as home
+    - [ ] Centered search - animate expand to fill width
+    - [ ] User stats w opaque bg (static for now)
+    - [ ] User profile icon (static for now)
+- [ ] Week 3
+    - [ ] Get data back from Movie DB API
+    - [ ] Hydrate movie info page with response data
+- [ ] Week 4
+    - [ ] Search functionality (I’m thinking of doing a PiP interface w scroll)
+- [ ] Week 5
+    - [ ] User profile page (static for now)
+    - [ ] Begin user auth (design + engineer)
+- [ ] Week 6
+    - [ ] Complete user auth (store user info + image storage)\
+    - [ ] API with user table and hydrate profile page
+    - [ ] pfp, bio, watchlist, ratings
+- [ ] Week 7
+    - [ ] Add infographs for user ratings
+    - [ ] Style polish phase
+    - [ ] Make user profiles more fun
+- [ ] Week 8
+    - [ ] Host + purchase domain?
 
-| Week 2 | 
-- Begin floating NAV
-  - Icon as home
-  - Centered search - animate expand to fill width
-  - User stats w opaque bg (static for now)
-  - User profile icon (static for now)
-|
 
-| Week 3 | 
-- 
-
-
-- [ Test here yo ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+**Bonus Features**
+- [ ] Add other users
+    - [ ] View other user profiles
+    - [ ] Profile public or private toggle
+- [ ] User profile themes
+- [ ] Multiple language support
 
 See the [open issues](https://github.com/christianrhodes18/movie-tv-tracker/issues) for a full list of proposed features (and known issues).
 
