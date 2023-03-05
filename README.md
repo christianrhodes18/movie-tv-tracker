@@ -82,8 +82,9 @@
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* ![The Movie DB](https://www.themoviedb.org/documentation/api) - Movie and Show API
-* Vercel - Hosting + CI/CD
+* [![Tailwind][Tailwind]][Tailwind-url]
+* [![Vercel][Vercel]][Vercel-url]
+* [![TheMovieDB][TheMovieDB]][TheMovieDB-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -247,10 +248,13 @@ Project Link: [https://github.com/christianrhodes18/movie-tv-tracker](movie-tv-t
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
+[Tailwind]: https://img.shields.io/badge/Tailwind-styling-blue?style=for-the-badge&logo=appveyor
+[Tailwind-url]: https://tailwindcss.com/
+[TheMovieDB]: https://img.shields.io/badge/TheMovieDB-movie_api-yellowgreen?style=for-the-badge&logo=appveyor
+[TheMovieDB-url]: https://www.themoviedb.org/documentation/api
+[Vercel]: https://img.shields.io/badge/Vercel-hosting_cd+cd-blueviolet?style=for-the-badge&logo=appveyor
+[Vercel-url]: https://vercel.com/
+
 [Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
 [Svelte-url]: https://svelte.dev/
 [Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
