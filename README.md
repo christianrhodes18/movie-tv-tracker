@@ -82,12 +82,9 @@
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* ![The Movie DB](https://www.themoviedb.org/documentation/api) - Movie and Show API
+* Vercel - Hosting + CI/CD
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,7 +94,7 @@
 ## Roadmap
 
 - [ ] Week 1
-    - [ ] Create project + README and add to GitHub
+    - [x] Create project + README and add to GitHub
     - [ ] Begin work on Movie page (static content)
     - [ ] Movie info page - full vh + vw
 - [ ] Week 2
