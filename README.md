@@ -109,7 +109,7 @@
     - [ ] Get data back from Movie DB API
     - [ ] Hydrate movie info page with response data
 - [ ] Week 4 (3-27-23)
-    - [ ] Search functionality (I’m thinking of doing a PiP interface w scroll)
+    - [ ] Search functionality (I’m thinking of doing a PiP interface w scroll. Search title or genre)
 - [ ] Week 5 (4-3-23)
     - [ ] User profile page (static for now)
     - [ ] Begin user auth (design + engineer)
@@ -130,6 +130,8 @@
     - [ ] View other user profiles
     - [ ] Profile public or private toggle
 - [ ] Shuffle fonts / theme for different titles (based on genre? color?)
+- [ ] Lists
+- [ ] Shortcut for search (ctrl + k)
 - [ ] User profile themes
 - [ ] Multiple language support
 
