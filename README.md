@@ -94,33 +94,34 @@
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Week 1
+- [ ] Week 1 (3-06-23)
     - [x] Create project + README and add to GitHub
-    - [ ] Begin work on Movie page (static content)
-    - [ ] Movie info page - full vh + vw
-- [ ] Week 2
+    - [ ] Begin work on Movie info page - full vh + vw (static content)
+    - [ ] Movie info page layout done
+    - [ ] Movie info page styled
+- [ ] Week 2 (3-13-23)
     - [ ] Begin floating NAV
     - [ ] Icon as home
     - [ ] Centered search - animate expand to fill width
     - [ ] User stats w opaque bg (static for now)
     - [ ] User profile icon (static for now)
-- [ ] Week 3
+- [ ] Week 3 (3-20-23)
     - [ ] Get data back from Movie DB API
     - [ ] Hydrate movie info page with response data
-- [ ] Week 4
+- [ ] Week 4 (3-27-23)
     - [ ] Search functionality (I’m thinking of doing a PiP interface w scroll)
-- [ ] Week 5
+- [ ] Week 5 (4-3-23)
     - [ ] User profile page (static for now)
     - [ ] Begin user auth (design + engineer)
-- [ ] Week 6
+- [ ] Week 6 (4-10-23)
     - [ ] Complete user auth (store user info + image storage)\
     - [ ] API with user table and hydrate profile page
     - [ ] pfp, bio, watchlist, ratings
-- [ ] Week 7
+- [ ] Week 7 (4-17-23)
     - [ ] Add infographs for user ratings
     - [ ] Style polish phase
     - [ ] Make user profiles more fun
-- [ ] Week 8
+- [ ] Week 8 (4-24-23)
     - [ ] Host + purchase domain?
 
 
@@ -128,6 +129,7 @@
 - [ ] Add other users
     - [ ] View other user profiles
     - [ ] Profile public or private toggle
+- [ ] Shuffle fonts / theme for different titles (based on genre? color?)
 - [ ] User profile themes
 - [ ] Multiple language support
 
