@@ -3,5 +3,25 @@
 @tailwind utilities;
 
 :root {
+    --color-primary: #f00;
+    --color-secondary: #0f0;
+    --color-tertiary: #00f;
+}
 
+* {
+    outline: 1px solid red;
+}
+
+body {
+    
+}
+
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 2rem;
 }
