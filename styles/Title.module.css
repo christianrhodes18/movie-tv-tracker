@@ -42,3 +42,13 @@
     border-width: 1px;
     border-radius: 5px;
 }
+
+/* media query for desktop */
+@media (min-width: 1024px) {
+    .mainInfo {
+        padding-top: 20%;
+    }
+    .interaction {
+        margin-top: 40%;
+    }
+}
