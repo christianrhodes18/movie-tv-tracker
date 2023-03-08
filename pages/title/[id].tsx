@@ -28,19 +28,16 @@ export default function Title() {
             </div>
 
             {/* interaction buttons */}
-            <div className={styles.flexRow}>
-                <button 
-                    className={styles.interaction} 
+            <div className={styles.interaction}>
+                <button
                     onClick={() => console.log('watchlist')}>
                     Watchlist
                 </button>
-                <button 
-                    className={styles.interaction} 
+                <button
                     onClick={() => console.log('rate')}>
                     Rate
                 </button>
-                <button 
-                    className={styles.interaction} 
+                <button
                     onClick={() => console.log('seen')}>
                     Seen
                 </button>
