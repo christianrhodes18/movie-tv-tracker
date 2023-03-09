@@ -18,7 +18,8 @@
 }
 
 .mainInfo {
-    padding-top: 35%;
+    padding-top: 30vh;
+    height: 100vh;
 }
 .mainInfo h1 {
     margin: 0 1rem 1rem 1rem;
@@ -33,7 +34,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    margin-top: 55%;
+    /* margin-top: 55%; */
 }
 .interaction > button {
     border: red;
@@ -46,9 +47,9 @@
 /* media query for desktop */
 @media (min-width: 1024px) {
     .mainInfo {
-        padding-top: 20%;
+        /* padding-top: 20%; */
     }
     .interaction {
-        margin-top: 40%;
+        /* margin-top: 40%; */
     }
 }

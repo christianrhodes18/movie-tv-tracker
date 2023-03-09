@@ -25,23 +25,25 @@ export default function Title() {
                     <h3>24 Episodes</h3>
                 </div>
                 <h1>Altered Carbon</h1>
+
+                {/* interaction buttons */}
+                <div className={styles.interaction}>
+                    <button
+                        onClick={() => console.log('watchlist')}>
+                        Watchlist
+                    </button>
+                    <button
+                        onClick={() => console.log('rate')}>
+                        Rate
+                    </button>
+                    <button
+                        onClick={() => console.log('seen')}>
+                        Seen
+                    </button>
+                </div>
             </div>
 
-            {/* interaction buttons */}
-            <div className={styles.interaction}>
-                <button
-                    onClick={() => console.log('watchlist')}>
-                    Watchlist
-                </button>
-                <button
-                    onClick={() => console.log('rate')}>
-                    Rate
-                </button>
-                <button
-                    onClick={() => console.log('seen')}>
-                    Seen
-                </button>
-            </div>
+            
         </>
     )
 }
