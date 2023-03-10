@@ -96,7 +96,7 @@
 
 - [ ] Week 1 (3-06-23)
     - [x] Create project + README and add to GitHub
-    - [ ] Begin work on Movie info page - full vh + vw (static content)
+    - [x] Begin work on Movie info page - full vh + vw (static content)
     - [ ] Movie info page layout done
     - [ ] Movie info page styled
 - [ ] Week 2 (3-13-23)
