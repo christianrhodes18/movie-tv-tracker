@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import styles from '@/styles/Title.module.css'
@@ -26,21 +27,28 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque corrupti odit iusto ab. Iusto, eius culpa ratione exercitationem, enim et fuga quam error earum aperiam quibusdam vitae provident. Placeat enim voluptas minima doloremque, inventore architecto. Laudantium magni eos autem, molestiae eaque eum minus quibusdam dolorem odio quis assumenda culpa iste cum eveniet consectetur repellat iusto esse quasi deleniti. Maxime doloremque consequuntur, assumenda beatae hic minus vel nihil in provident sunt ipsam inventore, ab aut sed architecto. Nostrum labore iure corporis ex iusto distinctio laudantium, et beatae doloribus aut maxime amet, hic quas? Ratione, voluptatibus accusantium tempora tempore odio omnis praesentium!'
     }
 
-    window.onscroll = function() {blurOnScroll()};
-
-    function blurOnScroll() {
-        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        console.log(scrolled)
-    }
+    const [blurAmount, setBlurAmount] = useState(0)
+    useEffect(function mount() {
+        function onScroll() {
+            //calculate blur amount based on scroll position
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 10; // 10 is the max blur
+            console.log(scrolled)
+            setBlurAmount(scrolled)
+        }
+        window.addEventListener('scroll', onScroll)
+        return function unmount() {
+            window.removeEventListener('scroll', onScroll)
+        }
+    }, [])
     
     return (
         <>
             {/* hero image */}
             <div className={styles.heroImage}>
                 <Image
-                    style={{filter: 'blur(2px)'}}
+                    style={{filter: `blur(${blurAmount}px)`}}
                     src='/altered_carbon_demo_wallpaper.jpg'
                     alt='Altered Carbon'
                     width={1920}
