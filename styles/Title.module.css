@@ -40,9 +40,29 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.interaction > button {
 
+.iconBounce:hover {
+    animation-name: bounce;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-play-state: running;
 }
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+@-moz-keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+@-webkit-keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
 
 .moreInfo {
     height: 100vh;

@@ -53,6 +53,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
                         <button
                             onClick={() => console.log('watchlist')}>
                             <Image
+                                className={styles.iconBounce}
                                 src='/icons/icon_add.png'
                                 alt='add icon'
                                 width={50}
@@ -62,6 +63,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
                         <button
                             onClick={() => console.log('rate')}>
                             <Image
+                                className={styles.iconBounce}
                                 src='/icons/icon_star.png'
                                 alt='rate icon'
                                 width={50}
@@ -71,6 +73,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
                         <button
                             onClick={() => console.log('seen')}>
                             <Image
+                                className={styles.iconBounce}
                                 src='/icons/icon_eye.png'
                                 alt='watched icon'
                                 width={50}
