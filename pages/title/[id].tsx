@@ -25,6 +25,15 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
         genre: ['Sci-Fi', 'Crime', 'Thriller'],
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque corrupti odit iusto ab. Iusto, eius culpa ratione exercitationem, enim et fuga quam error earum aperiam quibusdam vitae provident. Placeat enim voluptas minima doloremque, inventore architecto. Laudantium magni eos autem, molestiae eaque eum minus quibusdam dolorem odio quis assumenda culpa iste cum eveniet consectetur repellat iusto esse quasi deleniti. Maxime doloremque consequuntur, assumenda beatae hic minus vel nihil in provident sunt ipsam inventore, ab aut sed architecto. Nostrum labore iure corporis ex iusto distinctio laudantium, et beatae doloribus aut maxime amet, hic quas? Ratione, voluptatibus accusantium tempora tempore odio omnis praesentium!'
     }
+
+    window.onscroll = function() {blurOnScroll()};
+
+    function blurOnScroll() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        console.log(scrolled)
+    }
     
     return (
         <>
