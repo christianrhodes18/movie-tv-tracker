@@ -66,6 +66,7 @@
 
 .moreInfo {
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* media query for desktop */

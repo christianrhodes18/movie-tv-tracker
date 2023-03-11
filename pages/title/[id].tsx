@@ -40,6 +40,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
             {/* hero image */}
             <div className={styles.heroImage}>
                 <Image
+                    style={{filter: 'blur(2px)'}}
                     src='/altered_carbon_demo_wallpaper.jpg'
                     alt='Altered Carbon'
                     width={1920}
