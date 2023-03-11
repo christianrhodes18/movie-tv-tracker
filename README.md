@@ -119,7 +119,7 @@
     - [ ] pfp, bio, watchlist, ratings
 - [ ] Week 7 (4-17-23)
     - [ ] Add infographs for user ratings
-    - [ ] Style polish phase
+    - [ ] Style polish phase (anims, color + font pass, intersection observers, etc.)
     - [ ] Make user profiles more fun
 - [ ] Week 8 (4-24-23)
     - [ ] Host + purchase domain?

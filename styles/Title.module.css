@@ -23,9 +23,12 @@
 }
 .mainInfo h1 {
     margin: 0 1rem 1rem 1rem;
+    font-weight: bold;
+    line-height: normal;
 }
 .mainInfo h3 {
     margin: 0 0 0 1rem;
+    font-style: italic;
 }
 
 .interactionSection {
@@ -66,7 +69,21 @@
 
 .moreInfo {
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.moreInfo h3 {
+    margin: 0 0 0 1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.moreInfo h4 {
+    margin: 0 0 0 1rem;
+    font-weight: 200;
+    font-style: italic;
+}
+.moreInfo p {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
 }
 
 /* media query for desktop */

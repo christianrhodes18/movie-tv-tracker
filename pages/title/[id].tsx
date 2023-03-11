@@ -24,7 +24,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
         studio: 'Netflix',
         releaseYear: 2018,
         genre: ['Sci-Fi', 'Crime', 'Thriller'],
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque corrupti odit iusto ab. Iusto, eius culpa ratione exercitationem, enim et fuga quam error earum aperiam quibusdam vitae provident. Placeat enim voluptas minima doloremque, inventore architecto. Laudantium magni eos autem, molestiae eaque eum minus quibusdam dolorem odio quis assumenda culpa iste cum eveniet consectetur repellat iusto esse quasi deleniti. Maxime doloremque consequuntur, assumenda beatae hic minus vel nihil in provident sunt ipsam inventore, ab aut sed architecto. Nostrum labore iure corporis ex iusto distinctio laudantium, et beatae doloribus aut maxime amet, hic quas? Ratione, voluptatibus accusantium tempora tempore odio omnis praesentium!'
+        description: "The series starts over 360 years in the future, with most episodes of the first season set in the year 2384 in a futuristic metropolis known as Bay City. In the future, a person's memories and consciousness (termed digital human freight, or DHF) are recorded onto a disk-shaped device called a cortical stack, which is implanted in the vertebrae at the back of the neck. These storage devices are of alien design and have been reverse-engineered and mass-produced but can only be made from the material on Harlan's World. Physical human or synthetic bodies are called 'sleeves' and stacks can be transferred to new bodies after death, but a person can still be killed if their stack is destroyed and there is no backup. Only the wealthiest, known as 'Meths' in reference to Methuselah, have the means to change bodies through clones and remote storage of their consciousness in satellites, so they never have to die of old age before being resleeved. \nTakeshi Kovacs, a political operative with mercenary skills, is the sole surviving soldier of the Envoys, a rebel group defeated in an uprising against the new world order. In the first season, set 250 years after the Envoys are destroyed, his stack is pulled out of prison by 300-year-old Meth Laurens Bancroft, one of the wealthiest men in the settled worlds. Bancroft offers him the chance to solve a murder—Bancroft's own—to get a new shot at life. The second season takes place in the early 2410s, set 30 years after the first season: Kovacs, now in a new sleeve, continues to search for his lost love and Envoy leader Quellcrist Falconer."
     }
 
     const [blurAmount, setBlurAmount] = useState(0)
@@ -34,7 +34,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
             var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             var scrolled = (winScroll / height) * 10; // 10 is the max blur
-            console.log(scrolled)
+            //console.log(scrolled)
             setBlurAmount(scrolled)
         }
         window.addEventListener('scroll', onScroll)
