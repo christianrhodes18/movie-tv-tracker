@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '@/styles/Title.module.css'
 
 interface TitleDetails {
+    image: string;
     type: string;
     length: number;
     title: string;
@@ -18,6 +19,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
     const { id } = router.query
 
     titleDetails = {
+        image: '/altered_carbon_demo_wallpaper.jpg',
         type: 'Series',
         length: 24,
         title: 'Altered Carbon',
@@ -49,7 +51,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
             <div className={styles.heroImage}>
                 <Image
                     style={{filter: `blur(${blurAmount}px)`}}
-                    src='/altered_carbon_demo_wallpaper.jpg'
+                    src={titleDetails.image}
                     alt='Altered Carbon'
                     width={1920}
                     height={1080}
