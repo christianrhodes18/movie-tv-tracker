@@ -17,17 +17,27 @@ interface TitleDetails {
 export default function Title({ titleDetails }: { titleDetails: TitleDetails }) {
     const router = useRouter()
     const { id } = router.query
-
+    
     titleDetails = {
-        image: '/altered_carbon_demo_wallpaper.jpg',
+        image: '/demon_slayer_demo_wallpaper.jpg',
         type: 'Series',
         length: 24,
-        title: 'Altered Carbon',
-        studio: 'Netflix',
-        releaseYear: 2018,
-        genre: ['Sci-Fi', 'Crime', 'Thriller'],
-        description: "The series starts over 360 years in the future, with most episodes of the first season set in the year 2384 in a futuristic metropolis known as Bay City. In the future, a person's memories and consciousness (termed digital human freight, or DHF) are recorded onto a disk-shaped device called a cortical stack, which is implanted in the vertebrae at the back of the neck. These storage devices are of alien design and have been reverse-engineered and mass-produced but can only be made from the material on Harlan's World. Physical human or synthetic bodies are called 'sleeves' and stacks can be transferred to new bodies after death, but a person can still be killed if their stack is destroyed and there is no backup. Only the wealthiest, known as 'Meths' in reference to Methuselah, have the means to change bodies through clones and remote storage of their consciousness in satellites, so they never have to die of old age before being resleeved. \nTakeshi Kovacs, a political operative with mercenary skills, is the sole surviving soldier of the Envoys, a rebel group defeated in an uprising against the new world order. In the first season, set 250 years after the Envoys are destroyed, his stack is pulled out of prison by 300-year-old Meth Laurens Bancroft, one of the wealthiest men in the settled worlds. Bancroft offers him the chance to solve a murder—Bancroft's own—to get a new shot at life. The second season takes place in the early 2410s, set 30 years after the first season: Kovacs, now in a new sleeve, continues to search for his lost love and Envoy leader Quellcrist Falconer."
+        title: 'Demon Slayer: Kimetsu no Yaiba',
+        studio: 'Ufotable',
+        releaseYear: 2016,
+        genre: ['Anime', 'Adventure', 'Fantasy', 'Martial Arts', 'Shounen'],
+        description: "Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, 'Blade of Demon Destruction') is a Japanese manga series written and illustrated by Koyoharu Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes. It has been published in English by Viz Media and simultaneously published by Shueisha on their Manga Plus platform. It follows teenage Tanjiro Kamado, who strives to become a Demon Slayer after his family was slaughtered and his younger sister, Nezuko, turned into a demon."
     }
+    // titleDetails = {
+    //     image: '/altered_carbon_demo_wallpaper.jpg',
+    //     type: 'Series',
+    //     length: 24,
+    //     title: 'Altered Carbon',
+    //     studio: 'Netflix',
+    //     releaseYear: 2018,
+    //     genre: ['Sci-Fi', 'Crime', 'Thriller'],
+    //     description: "The series starts over 360 years in the future, with most episodes of the first season set in the year 2384 in a futuristic metropolis known as Bay City. In the future, a person's memories and consciousness (termed digital human freight, or DHF) are recorded onto a disk-shaped device called a cortical stack, which is implanted in the vertebrae at the back of the neck. These storage devices are of alien design and have been reverse-engineered and mass-produced but can only be made from the material on Harlan's World. Physical human or synthetic bodies are called 'sleeves' and stacks can be transferred to new bodies after death, but a person can still be killed if their stack is destroyed and there is no backup. Only the wealthiest, known as 'Meths' in reference to Methuselah, have the means to change bodies through clones and remote storage of their consciousness in satellites, so they never have to die of old age before being resleeved. \nTakeshi Kovacs, a political operative with mercenary skills, is the sole surviving soldier of the Envoys, a rebel group defeated in an uprising against the new world order. In the first season, set 250 years after the Envoys are destroyed, his stack is pulled out of prison by 300-year-old Meth Laurens Bancroft, one of the wealthiest men in the settled worlds. Bancroft offers him the chance to solve a murder—Bancroft's own—to get a new shot at life. The second season takes place in the early 2410s, set 30 years after the first season: Kovacs, now in a new sleeve, continues to search for his lost love and Envoy leader Quellcrist Falconer."
+    // }
 
     const [blurAmount, setBlurAmount] = useState(0)
     useEffect(function mount() {

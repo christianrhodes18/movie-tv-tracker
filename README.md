@@ -114,7 +114,7 @@
     - [ ] User profile page (static for now)
     - [ ] Begin user auth (design + engineer)
 - [ ] Week 6 (4-10-23)
-    - [ ] Complete user auth (store user info + image storage)\
+    - [ ] Complete user auth (store user info + image storage)
     - [ ] API with user table and hydrate profile page
     - [ ] pfp, bio, watchlist, ratings
 - [ ] Week 7 (4-17-23)
