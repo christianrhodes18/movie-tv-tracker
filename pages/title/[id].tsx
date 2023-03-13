@@ -22,7 +22,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
         image: '/demon_slayer_demo_wallpaper.jpg',
         type: 'Series',
         length: 24,
-        title: 'Demon Slayer: Kimetsu no Yaiba',
+        title: 'Demon Slayer',
         studio: 'Ufotable',
         releaseYear: 2016,
         genre: ['Anime', 'Adventure', 'Fantasy', 'Martial Arts', 'Shounen'],
@@ -56,7 +56,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
     }, [])
     
     return (
-        <>
+        <div className={styles.parentDiv}>
             {/* hero image */}
             <div className={styles.heroImage}>
                 <Image
@@ -69,12 +69,12 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
             </div>
 
             {/* media type, length, title */}
-            <div className={styles.mainInfo}>
+            <div className={styles.verticalContainer}>
+                <h1>{titleDetails.title}</h1>
                 <div className={styles.flexRow}>
                     <h3>{titleDetails.type}</h3>
                     {titleDetails.type == 'Series' ? <h3>{titleDetails.length} episodes</h3> : <h3>{titleDetails.length} minutes</h3>}    
                 </div>
-                <h1>{titleDetails.title}</h1>
 
                 {/* interaction buttons */}
                 <div className={styles.interactionSection}>
@@ -116,7 +116,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
             </div>
 
             {/* more info section */}
-            <div className={styles.moreInfo}>
+            <div className={styles.verticalContainer}>
                 <hr></hr>
                 {/* studio + release year */}
                 <div className={styles.flexRow}>
@@ -135,7 +135,6 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
                 <p>{titleDetails.description}</p>
 
             </div>
-            
-        </>
+        </div>
     )
 }

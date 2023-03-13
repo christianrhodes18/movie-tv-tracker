@@ -1,3 +1,7 @@
+/* .parentDiv {
+    scroll-snap-type: y mandatory;
+} */
+
 .heroImage img {
     position: fixed;
     z-index: -1;
@@ -17,18 +21,29 @@
     padding: .5rem;
 }
 
-.mainInfo {
-    padding-top: 25vh;
+.verticalContainer {
     height: 100vh;
+    scroll-snap-align: start;
 }
-.mainInfo h1 {
+.verticalContainer h1 {
+    padding-top: 35vh;
     margin: 0 1rem 1rem 1rem;
     font-weight: bold;
     line-height: normal;
 }
-.mainInfo h3 {
+.verticalContainer h3 {
     margin: 0 0 0 1rem;
+    font-weight: 400;
     font-style: italic;
+}
+.verticalContainer h4 {
+    margin: 0 0 0 1rem;
+    font-weight: 200;
+    font-style: italic;
+}
+.verticalContainer p {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
 }
 
 .interactionSection {
@@ -66,25 +81,6 @@
     100% { transform: translateY(0); }
 }
 
-
-.moreInfo {
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.3);
-}
-.moreInfo h3 {
-    margin: 0 0 0 1rem;
-    font-weight: 400;
-    font-style: italic;
-}
-.moreInfo h4 {
-    margin: 0 0 0 1rem;
-    font-weight: 200;
-    font-style: italic;
-}
-.moreInfo p {
-    font-family: "Prompt", sans-serif;
-    font-weight: 200;
-}
 
 /* media query for desktop */
 @media (min-width: 1024px) {
