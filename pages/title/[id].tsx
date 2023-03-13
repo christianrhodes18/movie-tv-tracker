@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import styles from '@/styles/Title.module.css'
+import Link from 'next/link';
+import Status from '../components/status';
 
 interface TitleDetails {
     image: string;
@@ -68,55 +70,30 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
                 />
             </div>
 
-            {/* media type, length, title */}
+            {/* initial section - title, type, length, and status */}
             <div className={styles.verticalContainer}>
                 <h1>{titleDetails.title}</h1>
                 <div className={styles.flexRow}>
-                    <h3>{titleDetails.type}</h3>
+                    <h3>{titleDetails.type}:</h3>
                     {titleDetails.type == 'Series' ? <h3>{titleDetails.length} episodes</h3> : <h3>{titleDetails.length} minutes</h3>}    
                 </div>
+                <button className={styles.statusButton}>
+                    <Link href="#info">More Info</Link>
+                </button>
 
-                {/* interaction buttons */}
-                <div className={styles.interactionSection}>
-                    <div className={styles.interaction}>
-                        
-                        <button
-                            onClick={() => console.log('watchlist')}>
-                            <Image
-                                className={styles.iconBounce}
-                                src='/icons/icon_add.png'
-                                alt='add icon'
-                                width={50}
-                                height={50}
-                            />
-                        </button>
-                        <button
-                            onClick={() => console.log('rate')}>
-                            <Image
-                                className={styles.iconBounce}
-                                src='/icons/icon_star.png'
-                                alt='rate icon'
-                                width={50}
-                                height={50}
-                            />
-                        </button>
-                        <button
-                            onClick={() => console.log('seen')}>
-                            <Image
-                                className={styles.iconBounce}
-                                src='/icons/icon_eye.png'
-                                alt='watched icon'
-                                width={50}
-                                height={50}
-                            />
-                        </button>
-                    </div>
+                {/* status component */}
+                <div className={styles.statusSection}>
+                    <Status />
                 </div>
                 
             </div>
 
-            {/* more info section */}
-            <div className={styles.verticalContainer}>
+            {/* info section */}
+            <div className={styles.verticalContainer} id="info">
+                <div className={styles.flexRow}>
+                    <h2>{titleDetails.title}</h2>
+                    <h3>STATUS HERE</h3>
+                </div>
                 <hr></hr>
                 {/* studio + release year */}
                 <div className={styles.flexRow}>
