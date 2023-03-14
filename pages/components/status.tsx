@@ -1,31 +1,27 @@
 import styles from '@/styles/StatusComponent.module.css'
+import { useEffect, useState } from 'react'
 
 export default function Status(props: { type: string }) {
+    const [watchStatus, setWatchStatus] = useState(props.type)
+    
+    useEffect(() => {
+        setWatchStatus(props.type)
+    }, [props.type])
+
     // can be 'unwatched', 'watchlist', 'rated'
-    if (props.type === 'unwatched') {
+    if (props.type === 'watchlist') {
         return (
-            <div className={styles.status}>
-                <h3>
-                    <span>Watched</span>
-                </h3>
-            </div>
-        )
-    }
-    else if (props.type === 'watchlist') {
-        return (
-            <div className={styles.status}>
-                <h3>
-                    <span>Watched</span>
-                </h3>
-            </div>
-        )
-    }
-    else if (props.type === 'unrated') {
-        return (
-            <div className={styles.status}>
-                <h3>
-                    <span>Watched</span>
-                </h3>
+            <div className={styles.statusParent}>
+                <div className={styles.statusChild}>
+                    <h3>
+                        <span>In Watchlist</span>
+                    </h3>
+                </div>
+                <div className={styles.statusChild}>
+                    <h3>
+                        <span>Rate</span>
+                    </h3>
+                </div>
             </div>
         )
     }
@@ -38,21 +34,20 @@ export default function Status(props: { type: string }) {
             </div>
         )
     }
-    else {
+    else { //assume unwatched
         return (
-            <div className={styles.status}>
-                <h3>
-                    <span>Watched</span>
-                </h3>
+            <div className={styles.statusParent}>
+                <div className={styles.statusChild}>
+                    <h3>
+                        <span>Add to Watchlist</span>
+                    </h3>
+                </div>
+                <div className={styles.statusChild}>
+                    <h3>
+                        <span>Rate</span>
+                    </h3>
+                </div>
             </div>
         )
     }
-
-    // return (
-    //     <div className={styles.status}>
-    //         <h3>
-    //             <span>My Status ...</span>
-    //         </h3>
-    //     </div>
-    // )
 }

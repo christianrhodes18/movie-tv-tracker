@@ -31,7 +31,8 @@
     height: 150vh;
     width: 100vw;
     padding-top: 7rem;
-    background-color: rgba(0, 0, 0, 0.2);
+    color: #FDFFFF;
+    background-color: #101010DD;
     scroll-snap-align: start;
     scroll-behavior: smooth;
 }
@@ -76,13 +77,14 @@
     transition: all .2s ease-in-out;
 }
 
-.statusSection {
+.statusSectionTop {
     position: absolute;
-    bottom: 10%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    bottom: 2rem;
+    right: 2rem;
+    /* width: 100%; */
+    /* display: flex;
+    justify-content: right;
+    align-items: center; */
 }
 
 .iconBounce:hover {

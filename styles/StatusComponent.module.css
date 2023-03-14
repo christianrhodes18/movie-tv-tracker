@@ -1,10 +1,17 @@
-.status {
-    margin: 0 auto;
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 1rem;
-    height: 60px;
+.statusParent {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+.statusChild {
+    border: 1px solid #FDFFFF;
+    border-radius: 10px;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    color: #FDFFFF;
+}
+
 .status h3 {
     margin: 0;
     text-align: center;
