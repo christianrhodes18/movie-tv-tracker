@@ -74,10 +74,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
             {/* initial section - title, type, length, and status */}
             <div className={styles.verticalContainerFixed}>
                 <h1>{titleDetails.title}</h1>
-                <div className={styles.flexRow}>
-                    <h3>{titleDetails.type}:</h3>
-                    {titleDetails.type == 'Series' ? <h3>{titleDetails.length} episodes</h3> : <h3>{titleDetails.length} minutes</h3>}    
-                </div>
+                {titleDetails.type == 'Series' ? <h3>{titleDetails.type}: {titleDetails.length} episodes </h3> : <h3>{titleDetails.type}: {titleDetails.length} minutes </h3>}  
                 <button className={styles.statusButton}>
                     <Link href="#info">More Info</Link>
                 </button>
@@ -105,7 +102,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
                 {/* genre tags */}
                 <div className={styles.flexRow}>
                     {titleDetails.genre.map((genre, index) => (
-                        <h3 key={index}>{genre}</h3>
+                        <h4 key={index}>{genre}</h4>
                     ))}
                 </div>
 

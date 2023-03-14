@@ -1,6 +1,11 @@
 /* .parentDiv {
-    scroll-snap-type: y mandatory;
+    
 } */
+
+.verticalContainerFixed, .verticalContainerDynamic {
+    width: 100vw;
+    padding: 2rem;
+}
 
 .heroImage img {
     position: fixed;
@@ -16,17 +21,22 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
+    align-items: baseline
 }
-.flexRow h3 p {
-    padding: .5rem;
+.flexRow h4 {
+    padding: 0 0 0 1rem;
 }
 
 .verticalContainerDynamic {
     height: 150vh;
     width: 100vw;
-    padding: 7rem 0 0 0;
+    padding-top: 7rem;
+    background-color: rgba(0, 0, 0, 0.2);
     scroll-snap-align: start;
     scroll-behavior: smooth;
+}
+.verticalContainerDynamic hr {
+    margin: 0 -2rem 0 -2rem;
 }
 
 .verticalContainerFixed {
@@ -37,17 +47,14 @@
 }
 .verticalContainerFixed h1 {
     padding-top: 35vh;
-    margin: 0 1rem 1rem 1rem;
-    font-weight: bold;
-    line-height: normal;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: .85;
 }
 .verticalContainerFixed h3 {
-    margin: 0 0 0 1rem;
-    font-weight: 400;
     font-style: italic;
 }
 .verticalContainerFixed h4 {
-    margin: 0 0 0 1rem;
     font-weight: 200;
     font-style: italic;
 }
@@ -108,5 +115,20 @@
     }
     .interaction {
         /* margin-top: 40%; */
+    }
+}
+
+/* media query for tablet */
+/* @media (min-width: 768px) and (max-width: 1023px) {
+    
+} */
+
+/* media query for mobile */
+@media (max-width: 767px) {
+    .verticalContainerFixed, .verticalContainerDynamic {
+        padding: 1rem;
+    }
+    .verticalContainerDynamic hr {
+        margin: 0 -1rem 0 -1rem;
     }
 }
