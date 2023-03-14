@@ -22,8 +22,9 @@
 }
 
 .verticalContainerDynamic {
-    height: 2000px;
+    height: 150vh;
     width: 100vw;
+    padding: 7rem 0 0 0;
     scroll-snap-align: start;
     scroll-behavior: smooth;
 }
