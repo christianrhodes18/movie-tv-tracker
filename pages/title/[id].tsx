@@ -41,6 +41,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
     //     description: "The series starts over 360 years in the future, with most episodes of the first season set in the year 2384 in a futuristic metropolis known as Bay City. In the future, a person's memories and consciousness (termed digital human freight, or DHF) are recorded onto a disk-shaped device called a cortical stack, which is implanted in the vertebrae at the back of the neck. These storage devices are of alien design and have been reverse-engineered and mass-produced but can only be made from the material on Harlan's World. Physical human or synthetic bodies are called 'sleeves' and stacks can be transferred to new bodies after death, but a person can still be killed if their stack is destroyed and there is no backup. Only the wealthiest, known as 'Meths' in reference to Methuselah, have the means to change bodies through clones and remote storage of their consciousness in satellites, so they never have to die of old age before being resleeved. \nTakeshi Kovacs, a political operative with mercenary skills, is the sole surviving soldier of the Envoys, a rebel group defeated in an uprising against the new world order. In the first season, set 250 years after the Envoys are destroyed, his stack is pulled out of prison by 300-year-old Meth Laurens Bancroft, one of the wealthiest men in the settled worlds. Bancroft offers him the chance to solve a murder—Bancroft's own—to get a new shot at life. The second season takes place in the early 2410s, set 30 years after the first season: Kovacs, now in a new sleeve, continues to search for his lost love and Envoy leader Quellcrist Falconer."
     // }
 
+    const [watchStatus, setWatchStatus] = useState('')
     const [blurAmount, setBlurAmount] = useState(0)
     useEffect(function mount() {
         function onScroll() {
@@ -71,7 +72,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
             </div>
 
             {/* initial section - title, type, length, and status */}
-            <div className={styles.verticalContainer}>
+            <div className={styles.verticalContainerFixed}>
                 <h1>{titleDetails.title}</h1>
                 <div className={styles.flexRow}>
                     <h3>{titleDetails.type}:</h3>
@@ -83,16 +84,16 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
 
                 {/* status component */}
                 <div className={styles.statusSection}>
-                    <Status />
+                    <Status type={watchStatus}/>
                 </div>
                 
             </div>
 
             {/* info section */}
-            <div className={styles.verticalContainer} id="info">
+            <div className={styles.verticalContainerDynamic} id="info">
                 <div className={styles.flexRow}>
                     <h2>{titleDetails.title}</h2>
-                    <h3>STATUS HERE</h3>
+                    <Status type={watchStatus}/>
                 </div>
                 <hr></hr>
                 {/* studio + release year */}
@@ -110,7 +111,6 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
 
                 {/* description */}
                 <p>{titleDetails.description}</p>
-
             </div>
         </div>
     )

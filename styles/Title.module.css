@@ -21,29 +21,36 @@
     padding: .5rem;
 }
 
-.verticalContainer {
+.verticalContainerDynamic {
+    height: 2000px;
+    width: 100vw;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+}
+
+.verticalContainerFixed {
     height: 100vh;
     width: 100vw;
     scroll-snap-align: start;
     scroll-behavior: smooth;
 }
-.verticalContainer h1 {
+.verticalContainerFixed h1 {
     padding-top: 35vh;
     margin: 0 1rem 1rem 1rem;
     font-weight: bold;
     line-height: normal;
 }
-.verticalContainer h3 {
+.verticalContainerFixed h3 {
     margin: 0 0 0 1rem;
     font-weight: 400;
     font-style: italic;
 }
-.verticalContainer h4 {
+.verticalContainerFixed h4 {
     margin: 0 0 0 1rem;
     font-weight: 200;
     font-style: italic;
 }
-.verticalContainer p {
+.verticalContainerFixed p {
     font-family: "Prompt", sans-serif;
     font-weight: 200;
 }
@@ -67,6 +74,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .iconBounce:hover {
