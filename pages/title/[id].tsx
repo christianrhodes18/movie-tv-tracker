@@ -6,7 +6,8 @@ import Link from 'next/link';
 import Status from '../components/status';
 
 interface TitleDetails {
-    image: string;
+    bannerImage: string;
+    posterImage: string;
     type: string;
     length: number;
     title: string;
@@ -21,7 +22,8 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
     const { id } = router.query
     
     // titleDetails = {
-    //     image: '/demon_slayer_demo_wallpaper.jpg',
+    //     bannerImage: '/demon_slayer_demo_wallpaper.jpg',
+    //     posterImage: '/demon_slayer_demo_poster.jpg',
     //     type: 'Series',
     //     length: 24,
     //     title: 'Demon Slayer',
@@ -31,7 +33,8 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
     //     description: "Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, 'Blade of Demon Destruction') is a Japanese manga series written and illustrated by Koyoharu Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes. It has been published in English by Viz Media and simultaneously published by Shueisha on their Manga Plus platform. It follows teenage Tanjiro Kamado, who strives to become a Demon Slayer after his family was slaughtered and his younger sister, Nezuko, turned into a demon."
     // }
     titleDetails = {
-        image: '/altered_carbon_demo_wallpaper.jpg',
+        bannerImage: '/altered_carbon_demo_wallpaper.jpg',
+        posterImage: '/altered_carbon_demo_poster.jpg',
         type: 'Series',
         length: 24,
         title: 'Altered Carbon',
@@ -64,7 +67,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
             <div className={styles.heroImage}>
                 <Image
                     style={{filter: `blur(${blurAmount}px)`}}
-                    src={titleDetails.image}
+                    src={titleDetails.bannerImage}
                     alt='Altered Carbon'
                     width={1920}
                     height={1080}
@@ -88,26 +91,38 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
 
             {/* info section */}
             <div className={styles.verticalContainerDynamic} id="info">
-                <div className={styles.flexRow}>
-                    <h2>{titleDetails.title}</h2>
-                    <Status type={watchStatus}/>
+                <div className={styles.stickyTitle}>
+                    <div className={styles.flexRow}>
+                        <h2>{titleDetails.title}</h2>
+                        <Status type={watchStatus}/>
+                    </div>
+                    <hr></hr>
                 </div>
-                <hr></hr>
-                {/* studio + release year */}
-                <div className={styles.flexRow}>
-                    <h3>{titleDetails.studio}</h3>
-                    <h4>{titleDetails.releaseYear}</h4>
-                </div>
+                <section className={styles.infoSection}>
+                    {/* studio + release year */}
+                    <div className={styles.flexRow}>
+                        <h3>{titleDetails.studio}</h3>
+                        <h4>{titleDetails.releaseYear}</h4>
+                    </div>
 
-                {/* genre tags */}
-                <div className={styles.flexRow}>
-                    {titleDetails.genre.map((genre, index) => (
-                        <h4 key={index}>{genre}</h4>
-                    ))}
-                </div>
+                    {/* genre tags */}
+                    <div className={styles.flexRow}>
+                        {titleDetails.genre.map((genre, index) => (
+                            <h4 key={index}>{genre}</h4>
+                        ))}
+                    </div>
 
-                {/* description */}
-                <p>{titleDetails.description}</p>
+                    {/* description */}
+                    <div className={styles.infoFlexRow}>
+                        <Image
+                            src={titleDetails.posterImage}
+                            alt='Altered Carbon'
+                            width={300}
+                            height={450}
+                        />
+                        <p>{titleDetails.description}</p>
+                    </div>
+                </section>
             </div>
         </div>
     )

@@ -2,7 +2,7 @@
     
 } */
 
-.verticalContainerFixed, .verticalContainerDynamic {
+.verticalContainerFixed {
     width: 100vw;
     padding: 2rem;
 }
@@ -21,18 +21,35 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
-    align-items: baseline
+    align-items: baseline;
 }
 .flexRow h4 {
     padding: 0 0 0 1rem;
 }
 
+.infoFlexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.infoFlexRow img, .infoFlexRow p {
+    flex: 50%;
+    padding: 0 4rem;
+}
+.infoFlexRow img {
+    width: 100%;
+    height: 100%;
+}
+.infoFlexRow p {
+    font-size: medium;
+}
+
 .verticalContainerDynamic {
     height: 150vh;
     width: 100vw;
-    padding-top: 7rem;
+    /* padding-top: 7rem; */
     color: #FDFFFF;
-    background-color: #101010DD;
+    background-color: #101010AA;
     scroll-snap-align: start;
     scroll-behavior: smooth;
 }
@@ -64,6 +81,17 @@
 .verticalContainerFixed p {
     font-family: "Prompt", sans-serif;
     font-weight: 200;
+}
+.stickyTitle {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #101010DD;
+    padding: 5rem 2rem 0 2rem;
+}
+
+.infoSection {
+    padding: 0 4rem;
 }
 
 .statusButton {
