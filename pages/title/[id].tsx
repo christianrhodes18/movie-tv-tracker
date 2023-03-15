@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '@/styles/Title.module.css'
 import Link from 'next/link';
 import Status from '../components/status';
+import Footer from '../components/footer';
 
 interface TitleDetails {
     bannerImage: string;
@@ -102,13 +103,15 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
                     {/* studio + release year */}
                     <div className={styles.flexRow}>
                         <h3>{titleDetails.studio}</h3>
-                        <h4>{titleDetails.releaseYear}</h4>
+                        <h4 className={styles.releaseYearSpace}>{titleDetails.releaseYear}</h4>
                     </div>
 
                     {/* genre tags */}
                     <div className={styles.flexRow}>
                         {titleDetails.genre.map((genre, index) => (
-                            <h4 key={index}>{genre}</h4>
+                            <Link href="" key={index} className={styles.genreTag}>
+                                <h4>{genre}</h4>
+                            </Link>
                         ))}
                     </div>
 
@@ -117,12 +120,16 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
                         <Image
                             src={titleDetails.posterImage}
                             alt='Altered Carbon'
-                            width={300}
-                            height={450}
+                            width={600}
+                            height={900}
                         />
                         <p>{titleDetails.description}</p>
                     </div>
+
+                    {/* filler space until more content here */}
+                    <p className="py-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis aliquid similique suscipit iusto recusandae totam voluptatibus id nam eius excepturi culpa laboriosam, obcaecati impedit nobis doloribus beatae veniam placeat atque! Non iusto sapiente eligendi? Ex voluptate accusantium labore enim magnam rem, voluptates numquam dolore alias itaque laudantium consequuntur modi odit vitae, corporis tenetur voluptatibus expedita recusandae iure iste quisquam architecto, consectetur at laboriosam? Modi, quam quaerat debitis, eveniet exercitationem inventore, aperiam ipsam atque ducimus id enim. Modi pariatur dolor aut.</p>
                 </section>
+                <Footer />
             </div>
         </div>
     )

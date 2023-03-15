@@ -23,7 +23,7 @@
     justify-content: left;
     align-items: baseline;
 }
-.flexRow h4 {
+.releaseYearSpace {
     padding: 0 0 0 1rem;
 }
 
@@ -33,12 +33,11 @@
     justify-content: space-between;
 }
 .infoFlexRow img, .infoFlexRow p {
-    flex: 50%;
-    padding: 0 4rem;
+    padding: 3rem 4rem;
 }
 .infoFlexRow img {
-    width: 100%;
-    height: 100%;
+    max-width: 450px;
+    max-height: 650px;
 }
 .infoFlexRow p {
     font-size: medium;
@@ -92,6 +91,16 @@
 
 .infoSection {
     padding: 0 4rem;
+}
+
+.genreTag {
+    padding: 0 1rem 0 0;
+}
+.genreTag h4 {
+    border: #FDFFFF 1px solid;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    padding: 0 .6rem;
 }
 
 .statusButton {
