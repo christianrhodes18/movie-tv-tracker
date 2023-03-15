@@ -92,18 +92,16 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
 
             {/* info section */}
             <div className={styles.verticalContainerDynamic} id="info">
-                <div className={styles.stickyTitle}>
-                    <div className={styles.flexRow}>
-                        <h2>{titleDetails.title}</h2>
-                        <Status type={watchStatus}/>
-                    </div>
-                    <hr></hr>
+                <div className={styles.flexRow}>
                 </div>
                 <section className={styles.infoSection}>
                     {/* studio + release year */}
-                    <div className={styles.flexRow}>
-                        <h3>{titleDetails.studio}</h3>
-                        <h4 className={styles.releaseYearSpace}>{titleDetails.releaseYear}</h4>
+                    <div className={styles.titleBar}>
+                        <h2>{titleDetails.title}</h2>
+                        <div className={styles.flexRow}>
+                            <h3>{titleDetails.studio}</h3>
+                            <h4 className={styles.releaseYearSpace}>{titleDetails.releaseYear}</h4>
+                        </div>
                     </div>
 
                     {/* genre tags */}
@@ -115,6 +113,8 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
                         ))}
                     </div>
 
+                    {/* <hr></hr> */}
+
                     {/* description */}
                     <div className={styles.infoFlexRow}>
                         <Image
@@ -123,7 +123,10 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
                             width={600}
                             height={900}
                         />
-                        <p>{titleDetails.description}</p>
+                        <div>
+                            <p>{titleDetails.description}</p>
+                            <Status type={watchStatus}/>
+                        </div>
                     </div>
 
                     {/* filler space until more content here */}

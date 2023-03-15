@@ -27,20 +27,29 @@
     padding: 0 0 0 1rem;
 }
 
+.titleBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 6rem;
+}
+
 .infoFlexRow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.infoFlexRow img, .infoFlexRow p {
-    padding: 3rem 4rem;
-}
+
 .infoFlexRow img {
     max-width: 450px;
     max-height: 650px;
+    padding: 3rem 4rem 0 0;
 }
 .infoFlexRow p {
     font-size: medium;
+    padding: 3rem 0 3rem 0;
+    max-width: 50rem;
 }
 
 .verticalContainerDynamic {
@@ -54,6 +63,7 @@
 }
 .verticalContainerDynamic hr {
     margin: 0 -2rem 0 -2rem;
+    margin-bottom: 2rem;
 }
 
 .verticalContainerFixed {
@@ -81,20 +91,13 @@
     font-family: "Prompt", sans-serif;
     font-weight: 200;
 }
-.stickyTitle {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: #101010DD;
-    padding: 5rem 2rem 0 2rem;
-}
 
 .infoSection {
-    padding: 0 4rem;
+    padding: 0 8rem;
 }
 
 .genreTag {
-    padding: 0 1rem 0 0;
+    padding: 1rem 1rem 0 0;
 }
 .genreTag h4 {
     border: #FDFFFF 1px solid;
