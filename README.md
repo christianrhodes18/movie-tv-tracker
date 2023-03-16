@@ -73,7 +73,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/christianrhodes18/movie-tv-tracker/README_images/screenshot.png)
+[![Movie Tracker Preview][preview-gif.gif]](https://github.com/christianrhodes18/movie-tv-tracker/README_images/screenshot.png)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -94,13 +94,14 @@
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Week 1 (3-06-23)
+- [x] Week 1 (3-06-23)
     - [x] Create project + README and add to GitHub
     - [x] Begin work on Movie info page - full vh + vw (static content)
     - [x] Movie info page layout done
-    - [ ] Movie info page styled
+    - [x] Movie info page styled
+    This week went well. My takeaways are that mobile-first is recommended, and it helps to get your designs as close to final as possible before development begins. 
 - [ ] Week 2 (3-13-23)
-    - [ ] Begin floating NAV
+    - [x] Begin floating NAV
     - [ ] Icon as home
     - [ ] Centered search - animate expand to fill width
     - [ ] User stats w opaque bg (static for now)
