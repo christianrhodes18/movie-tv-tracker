@@ -73,7 +73,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Movie Tracker Preview](https://github.com/christianrhodes18/movie-tv-tracker/README_images/preview-gif.gif)
+![Movie Tracker Preview](/README_images/preview-gif.gif)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
