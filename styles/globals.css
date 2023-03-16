@@ -5,13 +5,16 @@
 
 
 :root {
-    --color-primary: #f00;
-    --color-secondary: #0f0;
-    --color-tertiary: #00f;
+    --color-quartz: #514945;
+    --color-cordovan: #894242;
+    --color-indianred: #D55C5A;
+    --color-tulip: #F5918F;
+    --color-almond: #EBD4CC;
 }
 
 * {
     font-family: 'Kanit', sans-serif;
+    color: var(--color-almond);
 }
 
 body, html {

@@ -5,7 +5,7 @@
     height: 10rem;
     text-align: center;
     vertical-align: middle;
-    background-color: #000;
+    background-color: var(--color-cordovan);
     color: #fff;
     padding: 20px;
 }

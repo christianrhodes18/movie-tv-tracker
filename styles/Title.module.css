@@ -30,9 +30,12 @@
 .titleBar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: baseline;
     padding-top: 6rem;
+}
+.titleBar h2 {
+    padding-right: 2rem;
 }
 
 .infoFlexRow {
@@ -57,6 +60,7 @@
     width: 100vw;
     /* padding-top: 7rem; */
     color: #FDFFFF;
+    /* background-color: #5139456b; */
     background-color: #101010AA;
     scroll-snap-align: start;
     scroll-behavior: smooth;
@@ -72,17 +76,20 @@
     scroll-snap-align: start;
     scroll-behavior: smooth;
 }
+.stylizedTitleBG {
+    margin-top: 50vh;
+    width:fit-content;
+    padding: 1rem;
+    /* border-radius: 20px; */
+    /* backdrop-filter: invert(80%) brightness(100%); */
+}
 .verticalContainerFixed h1 {
-    padding-top: 35vh;
     font-style: italic;
     text-transform: uppercase;
     line-height: .85;
-    color: #101010;
+    /* width: min-content; */
 }
-.verticalContainerFixed h3 {
-    font-style: italic;
-    color: #101010;
-}
+
 .verticalContainerFixed h4 {
     font-weight: 200;
     font-style: italic;
@@ -90,6 +97,11 @@
 .verticalContainerFixed p {
     font-family: "Prompt", sans-serif;
     font-weight: 200;
+}
+
+.lengthInfo {
+    padding: 0 0 0 1rem;
+    font-style: italic;
 }
 
 .infoSection {
@@ -106,8 +118,11 @@
     padding: 0 .6rem;
 }
 
-.statusButton {
-    background-color: blue;
+.moreInfoSection {
+    padding-left: 2rem;
+}
+.moreInfoButton {
+    background-color: var(--color-indianred);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -168,11 +183,42 @@
 } */
 
 /* media query for mobile */
-@media (max-width: 767px) {
+@media (max-width: 640px) {
     .verticalContainerFixed, .verticalContainerDynamic {
         padding: 1rem;
     }
     .verticalContainerDynamic hr {
         margin: 0 -1rem 0 -1rem;
+    }
+    .stylizedTitleBG {
+        margin-top: 30vh;
+        width:fit-content;
+    }
+    .infoSection {
+        padding: 0 2rem;
+    }
+    .titleBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        padding-top: 6rem;
+        text-align: center;
+    }
+    .titleBar h2 {
+        padding-right: 0;
+        line-height: .9;
+    }
+    .titleBar h3 {
+        text-align: center;
+    }
+    .infoFlexRow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .infoFlexRow img {
+        padding: 3rem 0 0 0;
+        max-width: 100%;
     }
 }

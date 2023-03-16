@@ -16,8 +16,8 @@ export default function Search() {
             <Image
                 src={searchIcon}
                 alt='Search'
-                width={20}
-                height={20}
+                width={23}
+                height={23}
             />
                 {/* <input
                     type="text"

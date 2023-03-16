@@ -5,25 +5,22 @@ import Search from './search'
 export default function Nav() {
     return (
         <nav className={styles.nav}>
-
             {/* just using this style for temporary border until logo */}
-            <div className={styles.userStats}>
-                <Link href="/">
-                    Home
-                </Link>
-            </div>
+            <Link href="/">
+                Home
+            </Link>
 
             <Search />
 
             <div className={styles.userInfo}>
-                <div className={styles.userStats}>
+                {/* <div className={styles.userStats}>
                     <div className={styles.statOne}>
                         <p>5700</p>
                     </div>
                     <div className={styles.statOne}>
                         <p>625</p>
                     </div>
-                </div>
+                </div> */}
                 <Link href="/">
                     My Profile
                 </Link>
