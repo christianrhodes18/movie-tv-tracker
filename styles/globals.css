@@ -17,10 +17,6 @@
     color: var(--color-almond);
 }
 
-body, html {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-}
 
 h1 {
     font-size: 8rem;
@@ -41,4 +37,12 @@ h4 {
 p {
     font-size: 1.2rem;
     font-weight: 200;
+}
+
+/* media query for desktop */
+@media (min-width: 1024px) {
+    body, html {
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
 }

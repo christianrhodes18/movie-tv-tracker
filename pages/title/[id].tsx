@@ -133,8 +133,8 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
                     {/* filler space until more content here */}
                     <p className="py-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis aliquid similique suscipit iusto recusandae totam voluptatibus id nam eius excepturi culpa laboriosam, obcaecati impedit nobis doloribus beatae veniam placeat atque! Non iusto sapiente eligendi? Ex voluptate accusantium labore enim magnam rem, voluptates numquam dolore alias itaque laudantium consequuntur modi odit vitae, corporis tenetur voluptatibus expedita recusandae iure iste quisquam architecto, consectetur at laboriosam? Modi, quam quaerat debitis, eveniet exercitationem inventore, aperiam ipsam atque ducimus id enim. Modi pariatur dolor aut.</p>
                 </section>
-                <Footer />
             </div>
+            <Footer />
         </div>
     )
 }
