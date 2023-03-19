@@ -45,12 +45,9 @@
 }
 
 .verticalContainerDynamic {
-    height: 150vh;
     width: 100vw;
-    /* padding-top: 7rem; */
     color: #FDFFFF;
-    /* background-color: #5139456b; */
-    background-color: #101010AA;
+    background-color: #03071d88;
     scroll-snap-align: start;
     scroll-behavior: smooth;
 }
@@ -67,11 +64,23 @@
 }
 .stylizedTitleBG {
     margin-top: 50vh;
-    width:fit-content;
+    width: fit-content;
     padding: 1rem;
-    /* border-radius: 20px; */
-    /* backdrop-filter: invert(80%) brightness(100%); */
+    filter: drop-shadow(20px 4px 0.75rem #894242);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    /* border-radius: 20px; 
+    backdrop-filter: invert(80%) brightness(100%); */
 }
+
+.lengthInfo {
+    padding: 0 0 0 1rem;
+    font-style: italic;
+    filter: drop-shadow(10px 4px 0.75rem #894242);
+    /* filter: drop-shadow(0 0 0.75rem #000000); */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 .verticalContainerFixed h1 {
     font-style: italic;
     text-transform: uppercase;
@@ -86,11 +95,6 @@
 .verticalContainerFixed p {
     font-family: "Prompt", sans-serif;
     font-weight: 200;
-}
-
-.lengthInfo {
-    padding: 0 0 0 1rem;
-    font-style: italic;
 }
 
 .infoSection {
@@ -127,8 +131,10 @@
     padding-left: 2rem;
 }
 .moreInfoButton {
-    background-color: var(--color-indianred);
-    color: #fff;
+    background-color: var(--color-cordovan);
+    color: #ffffff;
+    height: 4rem;
+    width: 12rem;
     border: none;
     border-radius: 5px;
     padding: 1rem;
@@ -137,6 +143,11 @@
     font-weight: 500;
     cursor: pointer;
     transition: all .2s ease-in-out;
+}
+
+.footer {
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
 }
 
 .statusSectionTop {

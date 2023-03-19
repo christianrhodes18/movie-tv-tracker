@@ -22,28 +22,28 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
     const router = useRouter()
     const { id } = router.query
     
-    titleDetails = {
-        bannerImage: '/demon_slayer_demo_wallpaper.jpg',
-        posterImage: '/demon_slayer_demo_poster.jpg',
-        type: 'Series',
-        length: 24,
-        title: 'Demon Slayer',
-        studio: 'Ufotable',
-        releaseYear: 2016,
-        genre: ['Anime', 'Adventure', 'Fantasy', 'Martial Arts', 'Shounen'],
-        description: "Tanjiro, now a registered Demon Slayer, teams up with fellow slayers Zenitsu and Inosuke to investigate missing person cases on the mountain Natagumo. After the group is split up during a fight with possessed swordfighters, they slowly begin to realize the entire mountain is being controlled by a family of Demon spider creatures. A recap film of Kimetsu no Yaiba, covering episodes 15-21 with some new footage and special ending credits."
-    }
     // titleDetails = {
-    //     bannerImage: '/altered_carbon_demo_wallpaper.jpg',
-    //     posterImage: '/altered_carbon_demo_poster.jpg',
+    //     bannerImage: '/demon_slayer_demo_wallpaper.jpg',
+    //     posterImage: '/demon_slayer_demo_poster.jpg',
     //     type: 'Series',
     //     length: 24,
-    //     title: 'Altered Carbon',
-    //     studio: 'Netflix',
-    //     releaseYear: 2018,
-    //     genre: ['Sci-Fi', 'Crime', 'Thriller'],
-    //     description: "The series starts over 360 years in the future, with most episodes of the first season set in the year 2384 in a futuristic metropolis known as Bay City. In the future, a person's memories and consciousness (termed digital human freight, or DHF) are recorded onto a disk-shaped device called a cortical stack, which is implanted in the vertebrae at the back of the neck. These storage devices are of alien design and have been reverse-engineered and mass-produced but can only be made from the material on Harlan's World. Physical human or synthetic bodies are called 'sleeves' and stacks can be transferred to new bodies after death, but a person can still be killed if their stack is destroyed and there is no backup. Only the wealthiest, known as 'Meths' in reference to Methuselah, have the means to change bodies through clones and remote storage of their consciousness in satellites, so they never have to die of old age before being resleeved. \nTakeshi Kovacs, a political operative with mercenary skills, is the sole surviving soldier of the Envoys, a rebel group defeated in an uprising against the new world order. In the first season, set 250 years after the Envoys are destroyed, his stack is pulled out of prison by 300-year-old Meth Laurens Bancroft, one of the wealthiest men in the settled worlds. Bancroft offers him the chance to solve a murder—Bancroft's own—to get a new shot at life. The second season takes place in the early 2410s, set 30 years after the first season: Kovacs, now in a new sleeve, continues to search for his lost love and Envoy leader Quellcrist Falconer."
+    //     title: 'Demon Slayer',
+    //     studio: 'Ufotable',
+    //     releaseYear: 2016,
+    //     genre: ['Anime', 'Adventure', 'Fantasy', 'Martial Arts', 'Shounen'],
+    //     description: "Tanjiro, now a registered Demon Slayer, teams up with fellow slayers Zenitsu and Inosuke to investigate missing person cases on the mountain Natagumo. After the group is split up during a fight with possessed swordfighters, they slowly begin to realize the entire mountain is being controlled by a family of Demon spider creatures. A recap film of Kimetsu no Yaiba, covering episodes 15-21 with some new footage and special ending credits."
     // }
+    titleDetails = {
+        bannerImage: '/altered_carbon_demo_wallpaper.jpg',
+        posterImage: '/altered_carbon_demo_poster.jpg',
+        type: 'Series',
+        length: 24,
+        title: 'Altered Carbon',
+        studio: 'Netflix',
+        releaseYear: 2018,
+        genre: ['Sci-Fi', 'Crime', 'Thriller'],
+        description: "The series starts over 360 years in the future, with most episodes of the first season set in the year 2384 in a futuristic metropolis known as Bay City. In the future, a person's memories and consciousness (termed digital human freight, or DHF) are recorded onto a disk-shaped device called a cortical stack, which is implanted in the vertebrae at the back of the neck. These storage devices are of alien design and have been reverse-engineered and mass-produced but can only be made from the material on Harlan's World. Physical human or synthetic bodies are called 'sleeves' and stacks can be transferred to new bodies after death, but a person can still be killed if their stack is destroyed and there is no backup. Only the wealthiest, known as 'Meths' in reference to Methuselah, have the means to change bodies through clones and remote storage of their consciousness in satellites, so they never have to die of old age before being resleeved. \nTakeshi Kovacs, a political operative with mercenary skills, is the sole surviving soldier of the Envoys, a rebel group defeated in an uprising against the new world order. In the first season, set 250 years after the Envoys are destroyed, his stack is pulled out of prison by 300-year-old Meth Laurens Bancroft, one of the wealthiest men in the settled worlds. Bancroft offers him the chance to solve a murder—Bancroft's own—to get a new shot at life. The second season takes place in the early 2410s, set 30 years after the first season: Kovacs, now in a new sleeve, continues to search for his lost love and Envoy leader Quellcrist Falconer."
+    }
 
     const [watchStatus, setWatchStatus] = useState('')
     const [blurAmount, setBlurAmount] = useState(0)
@@ -52,7 +52,7 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
             //calculate blur amount based on scroll position
             var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 10; // 10 is the max blur
+            var scrolled = (winScroll / height) * 25; // 25 is the max blur
             //console.log(scrolled)
             setBlurAmount(scrolled)
         }
@@ -134,7 +134,9 @@ export default function Title({ titleDetails }: { titleDetails: TitleDetails }) 
                     <p className="py-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis aliquid similique suscipit iusto recusandae totam voluptatibus id nam eius excepturi culpa laboriosam, obcaecati impedit nobis doloribus beatae veniam placeat atque! Non iusto sapiente eligendi? Ex voluptate accusantium labore enim magnam rem, voluptates numquam dolore alias itaque laudantium consequuntur modi odit vitae, corporis tenetur voluptatibus expedita recusandae iure iste quisquam architecto, consectetur at laboriosam? Modi, quam quaerat debitis, eveniet exercitationem inventore, aperiam ipsam atque ducimus id enim. Modi pariatur dolor aut.</p>
                 </section>
             </div>
-            <Footer />
+            <section className={styles.footer}>
+                <Footer />
+            </section>
         </div>
     )
 }
