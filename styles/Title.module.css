@@ -144,6 +144,12 @@
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
+.moreInfoButton:hover {
+    background-color: #ffffff;
+    color: var(--color-cordovan);
+    border: var(--color-cordovan) 1px solid;
+    transition: all .2s ease-in-out;
+}
 
 .footer {
     scroll-snap-align: start;

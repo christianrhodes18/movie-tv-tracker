@@ -21,7 +21,7 @@ export default function Nav() {
                         <p>625</p>
                     </div>
                 </div> */}
-                <Link href="/">
+                <Link href="/profile/test">
                     My Profile
                 </Link>
             </div>
