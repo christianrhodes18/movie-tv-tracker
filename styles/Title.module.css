@@ -2,6 +2,12 @@
     
 } */
 
+/* scroll snapping */
+/* .verticalContainerFixed, .verticalContainerDynamic, .footer {
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+} */
+
 .heroImage img {
     position: absolute;
     z-index: -1;
@@ -11,9 +17,9 @@
     opacity: 80%;
 }
 
-.verticalContainerFixed {
+.verticalContainerFixed, .verticalContainerDynamic {
     width: 100vw;
-    padding: 2rem;
+    padding: 2rem 5rem;
 }
 
 .flexRow {
@@ -45,11 +51,8 @@
 }
 
 .verticalContainerDynamic {
-    width: 100vw;
     color: #FDFFFF;
-    background-color: #03071d88;
-    scroll-snap-align: start;
-    scroll-behavior: smooth;
+    background-color: #000;
 }
 .verticalContainerDynamic hr {
     margin: 0 -2rem 0 -2rem;
@@ -58,9 +61,6 @@
 
 .verticalContainerFixed {
     height: 100vh;
-    width: 100vw;
-    scroll-snap-align: start;
-    scroll-behavior: smooth;
 }
 .stylizedTitleBG {
     margin-top: 50vh;
@@ -127,9 +127,6 @@
     padding: 0 .6rem;
 }
 
-.moreInfoSection {
-    padding-left: 2rem;
-}
 .moreInfoButton {
     background-color: var(--color-cordovan);
     color: #ffffff;
@@ -149,11 +146,6 @@
     color: var(--color-cordovan);
     border: var(--color-cordovan) 1px solid;
     transition: all .2s ease-in-out;
-}
-
-.footer {
-    scroll-snap-align: start;
-    scroll-behavior: smooth;
 }
 
 .statusSectionTop {
